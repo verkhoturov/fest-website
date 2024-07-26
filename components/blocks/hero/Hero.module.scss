@@ -244,9 +244,15 @@ h4.supTitle {
         align-items: center;
         justify-content: center;
 
+        opacity: 0.5;
+        cursor: not-allowed;
+        user-select: none;
+
         @media (max-width: 768px) {
             max-width: 100%;
             min-height: 335px;
+
+            display: none;
         }
 
         img {

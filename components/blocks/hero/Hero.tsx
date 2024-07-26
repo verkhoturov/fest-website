@@ -75,7 +75,7 @@ const Hero = () => {
                     </div>
                     <div className={styles.play}>
                         <Image src="/svg/play.svg" alt="" width={116} height={116} />
-                        <Title as="h4">watch the teaser</Title>
+                        <Title as="h4">watch the teaser (coming soon)</Title>
                     </div>
                 </div>
             </div>
