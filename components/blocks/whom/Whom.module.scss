@@ -101,9 +101,11 @@
 
     &:nth-last-child(1) {
         margin-top: -100px;
+        padding: 24px 40px;
 
         @media (max-width: 768px) {
             margin-top: -50px;
+            padding: 20px;
         }
 
         @media (max-width: 370px) {
@@ -114,11 +116,11 @@
     h4 {
         font-size: 24px;
         @media (max-width: 768px) {
-            font-size: 14px;
+            font-size: 12px;
         }
 
         @media (max-width: 370px) {
-            font-size: 12px;
+            font-size: 10px;
         }
     }
 }

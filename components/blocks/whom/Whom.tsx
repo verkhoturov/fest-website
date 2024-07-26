@@ -22,10 +22,15 @@ const Whom = () => {
                     <Title as="h4">Who seeks to combine business and spiritual development</Title>
                 </div>
                 <div className={styles.card}>
-                    <Title as="h4">Who seeks to combine business and spiritual development</Title>
+                    <Title as="h4">
+                        Who seeks co-operation on the basis of shared human values.
+                    </Title>
                 </div>
                 <div className={styles.card}>
-                    <Title as="h4">Who seeks to combine business and spiritual development</Title>
+                    <Title as="h4">
+                        Who cares about the world in which our children will live and how to pass on
+                        cultural heritage to future generations
+                    </Title>
                 </div>
             </div>
 
