@@ -2,15 +2,11 @@
 
 import { memo } from 'react';
 import styles from './Hero.module.scss';
-// import Title from "@/components/ui/title";
 import Image from "next/image";
 import Title from "@/components/ui/title";
-import Button from "@/components/ui/button";
 import Text from "@/components/ui/text";
 import Brands from "@/components/organism/brands";
 import {RegisterCall} from "@/components/blocks/hero/Register";
-
-
 
 const Hero = () => {
     return (
@@ -23,23 +19,24 @@ const Hero = () => {
             </div>
 
             <div className={styles.hero}>
-                <div className={styles.img}>
-                    <Image src="/images/hero.png" alt="" width={1920} height={785}/>
+                <div className={styles.content}>
+                    <Title as="h4" className={styles.supTitle}>Creative Festival of</Title>
+                    <Title className={styles.title}>
+                        Abundant Future <br/> Design and Mindfulness <br/>Practices in Business
+                    </Title>
+                    <div className={styles.flex}>
+                        <RegisterCall/>
+                        <Text isRaleway className={styles.date}>16-18 august | Nurmuižas viesnīca</Text>
+                    </div>
+
+                    <Brands isHero className={styles.brands}/>
                 </div>
 
-                <div className={styles.content}>
-                    <div className="container">
-                        <Title as="h4" className={styles.supTitle}>Creative Festival of</Title>
-                        <Title className={styles.title}>
-                            Abundant Future <br/> Design and Mindfulness <br/>Practices in Business
-                        </Title>
-                        <div className={styles.flex}>
-                            <RegisterCall />
-                            <Text isRaleway className={styles.date}>16-18 august | Nurmuižas viesnīca</Text>
-                        </div>
+                <div className={styles.img}>
+                    <Image src="/images/hero.png" alt="" width={1920} height={785} className={styles.desk} />
+                    <Image src="/images/hero-m.png" alt="" width={375} height={444} className={styles.mob} />
 
-                        <Brands isHero className={styles.brands}/>
-                    </div>
+                    <Brands isHero className={styles.brands}/>
                 </div>
             </div>
 

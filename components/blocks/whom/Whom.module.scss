@@ -2,13 +2,24 @@
     padding: 100px 0;
     text-align: center;
     position: relative;
+    @media (max-width: 1024px) {
+        padding: 32px 0;
+    }
     h2.title {
         margin-bottom: 24px;
+        @media (max-width: 1024px) {
+            margin-bottom: 20px;
+        }
     }
 
     p.text {
         font-size: 24px;
         margin-bottom: 64px;
+
+        @media (max-width: 1024px) {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -21,6 +32,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+
+    @media (max-width: 768px) {
+        max-width: 335px;
+    }
 }
 
 .logo {
@@ -29,6 +44,20 @@
     left: 50%;
     z-index: 100;
     transform: translate(-50%, -50%);
+
+    @media (max-width: 768px) {
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    @media (max-width: 370px) {
+        img {
+            width: 40px;
+            height: 40px;
+        }
+    }
 }
 
 .card {
@@ -44,24 +73,62 @@
 
     mix-blend-mode: multiply;
 
+    @media (max-width: 768px) {
+        width: 175px;
+        height: 175px;
+        padding: 20px;
+    }
+
+    @media (max-width: 370px) {
+        width: 150px;
+        height: 150px;
+    }
+
     &:nth-child(2) {
         margin-right: -25px;
+
+        @media (max-width: 768px) {
+            margin-right: -10px;
+        }
     }
     &:nth-child(3) {
         margin-left: -25px;
+
+        @media (max-width: 768px) {
+            margin-left: -10px;
+        }
     }
 
     &:nth-last-child(1) {
         margin-top: -100px;
+
+        @media (max-width: 768px) {
+            margin-top: -50px;
+        }
+
+        @media (max-width: 370px) {
+            margin-top: -30px;
+        }
     }
 
     h4 {
         font-size: 24px;
+        @media (max-width: 768px) {
+            font-size: 14px;
+        }
+
+        @media (max-width: 370px) {
+            font-size: 12px;
+        }
     }
 }
 
 .d1, .d2, .d3, .d4, .d5, .d6 {
     position: absolute;
+
+    @media (max-width: 420px) {
+        display: none;
+    }
 }
 
 .d1 {

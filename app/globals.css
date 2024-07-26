@@ -1,3 +1,5 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css);
+
 :root {
     --c-dark: #252432;
     --c-dark2: #14121f;
@@ -47,6 +49,14 @@ a {
     width: 100%;
     max-width: 1220px;
     margin: 0 auto;
+
+    @media (max-width: 1280px) {
+        padding: 0 32px;
+    }
+
+    @media (max-width: 768px) {
+        padding: 0 20px;
+    }
 }
 
 /*@media (prefers-color-scheme: dark) {*/

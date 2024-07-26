@@ -4,6 +4,10 @@
     border: 1px solid var(--c-gray);
     border-radius: 32px;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+        padding: 25px 20px;
+    }
 }
 
 .head {
@@ -12,8 +16,27 @@
     cursor: pointer;
     transition: all .2s linear;
     position: relative;
+    @media (max-width: 768px) {
+        align-items: flex-start;
+        flex-direction: column;
+
+        .text {
+            max-height: 0;
+            overflow: hidden;
+            transition: all .2s linear;
+        }
+    }
     &.open {
         padding: 23px 0;
+
+
+        @media (max-width: 768px) {
+            padding: 10px 0;
+            .text {
+                max-height: 10rem;
+                padding-top: 30px;
+            }
+        }
     }
 }
 
@@ -23,6 +46,10 @@
     top: 55%;
     right: -20px;
     transform: translateY(-50%);
+
+    @media (max-width: 768px) {
+        right: -10px;
+    }
 }
 
 .body {
@@ -30,6 +57,11 @@
     transition: all .2s linear;
     overflow: hidden;
     max-height: 100rem;
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+    }
+
     &.hide {
         max-height: 0rem;
         opacity: 0;
@@ -40,6 +72,9 @@
     width: 100%;
     &:first-child {
         max-width: 350px;
+        @media (max-width: 768px) {
+            display: none;
+        }
     }
 }
 
@@ -48,15 +83,26 @@
     max-width: 350px;
     font-size: 30px;
     font-weight: 700;
+
+    @media (max-width: 768px) {
+        font-size: 24px;
+    }
 }
 
 .text {
     transition: .2s linear;
     font-size: 20px;
     font-weight: 600;
+
+    @media (max-width: 768px) {
+        font-size: 16px;
+    }
 }
 
 .list {
+    @media (max-width: 768px) {
+        margin-top: 15px;
+    }
     font-size: 14px;
     ul {
         list-style-type: disc;

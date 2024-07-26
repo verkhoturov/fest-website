@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Header.module.scss';
 import Link from "next/link";
@@ -5,6 +7,7 @@ import Image from "next/image";
 import Target from "@/components/ui/target";
 import Navigation from "@/components/organism/navigation";
 import classNames from "classnames";
+import {useScreenSize} from "@/utils";
 
 const target = [
     { id: 1, href: '/', icon: 'fb' },
@@ -13,7 +16,7 @@ const target = [
 ]
 
 export const Header = () => {
-
+    const { isMobile } = useScreenSize();
     return (
         <header className={styles.header}>
             <div className={classNames(styles.wrap, 'container')}>
@@ -21,9 +24,12 @@ export const Header = () => {
                     <Image src="/images/logo.svg" alt="" width={150} height={40} />
                 </Link>
 
-                <Navigation />
-
-                <Target data={target} />
+                {!isMobile && (
+                    <>
+                        <Navigation />
+                        <Target data={target} />
+                    </>
+                )}
             </div>
         </header>
     );

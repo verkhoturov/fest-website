@@ -1,6 +1,10 @@
 .block {
     padding: 80px 0 75px;
     position: relative;
+
+    @media (max-width: 1024px) {
+        padding: 32px 0;
+    }
 }
 
 .head {
@@ -12,14 +16,27 @@
     img {
         width: 78px;
         height: 78px;
+
+        @media (max-width: 768px) {
+            width: 32px;
+            height: 32px;
+        }
     }
 }
 
 .content {
     text-align: center;
     margin: 0 60px;
+
+    @media (max-width: 768px) {
+        padding: 0;
+    }
+
     h2 {
         margin-bottom: 32px;
+        @media (max-width: 768px) {
+            margin-bottom: 40px;
+        }
     }
 
     p {
@@ -27,6 +44,10 @@
         line-height: 150%;
         &:not(:last-child) {
             margin-bottom: 18px;
+
+            @media (max-width: 768px) {
+                margin-bottom: 12px;
+            }
         }
     }
 }
@@ -36,6 +57,13 @@
     width: 100%;
     max-width: 732px;
     margin: 0 auto 94px;
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+
+        img {
+            width: 100%;
+        }
+    }
 }
 
 .swiper {
@@ -50,6 +78,10 @@
 .d1, .d2, .d3, .d4 {
     top: 0;
     position: absolute;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .d3 {
