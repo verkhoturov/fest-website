@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "social": [
+            {
+                "id": "01",
+                "icon": "fb",
+                "href": "/"
+            },
+            {
+                "id": "02",
+                "icon": "in",
+                "href": "/"
+            }
+        ],
+        "name": "Lea <br/> Wedensky"
+    }
+]

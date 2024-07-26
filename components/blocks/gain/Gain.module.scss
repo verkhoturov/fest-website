@@ -1,0 +1,59 @@
+.block {
+    padding: 100px 0;
+    position: relative;
+    h2 {
+        margin-bottom: 64px;
+    }
+}
+
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 32px;
+}
+
+.card {
+    border-radius: 32px;
+    border: 1px solid var(--c-gray);
+    padding: 30px 24px;
+    background-color: var(--c-white);
+    min-height: 228px;
+
+    img {
+        width: 44px;
+        height: 44px;
+    }
+
+    p {
+        margin-top: 20px;
+        font-size: 20px;
+    }
+}
+
+.d1,
+.d2,
+.d3,
+.d4 {
+    position: absolute;
+}
+
+.d1 {
+    top: 28%;
+    left: -60px;
+}
+
+.d2 {
+    top: 55%;
+    left: -10%;
+}
+
+.d3 {
+    top: 63%;
+    left: -20px;
+    z-index: -1;
+}
+
+.d4 {
+    left: 50px;
+    bottom: 50px;
+}

@@ -1,0 +1,40 @@
+.footer {
+    background-color: rgba(#58E9C6, .11);
+    padding: 64px 0 32px;
+}
+
+.contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .col {
+        width: 33.33333%;
+        button {
+            width: 100%;
+            max-width: 386px;
+        }
+    }
+
+    h4 {
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 14px;
+        color: #000;
+    }
+}
+
+.target {
+    margin-top: 24px;
+}
+
+.brands {
+    margin-top: 70px;
+}
+
+.nav {
+    margin-bottom: 54px;
+}

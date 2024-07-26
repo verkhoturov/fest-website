@@ -1,0 +1,49 @@
+.card {
+
+}
+
+.image {
+    position: relative;
+    margin-bottom: 32px;
+    img {
+        border-radius: 32px;
+    }
+}
+
+.soc {
+    position: absolute;
+    left: 24px;
+    bottom: -13px;
+    display: flex;
+    gap: 10px;
+    a {
+        transition: .2s linear;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    img {
+        border-radius: 9px;
+    }
+}
+
+.body {
+    margin-right: -24px;
+    margin-left: 24px;
+    color: #000;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 110%;
+}
+
+.text {
+    font-size: 12px;
+    p {
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+}

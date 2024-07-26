@@ -1,0 +1,62 @@
+.block {
+    position: relative;
+    padding: 75px 0 100px;
+}
+.title {
+    margin-bottom: 18px;
+}
+
+.block .text {
+    margin-bottom: 124px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+    &:first-child {
+        max-width: 500px;
+        margin-right: 32px;
+    }
+
+    &:last-child {
+        max-width: 590px;
+    }
+}
+
+.btn {
+    width: 100%;
+    max-width: 384px;
+}
+
+.d1, .d2, .d3, .d4, .d5 {
+    top: 0;
+    position: absolute;
+}
+
+.d3 {
+    top: -4%;
+    right: 18%;
+}
+
+.d2 {
+    top: -6%;
+    right: 5%;
+}
+
+.d1 {
+    right: -7%;
+    top: 20%;
+}
+
+.d4 {
+    top: 40%;
+    left: -5%;
+}
+
+.d5 {
+    top: 60%;
+}

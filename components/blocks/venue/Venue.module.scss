@@ -1,0 +1,73 @@
+.block {
+    padding: 80px 0 75px;
+    position: relative;
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+}
+
+.nav {
+    img {
+        width: 78px;
+        height: 78px;
+    }
+}
+
+.content {
+    text-align: center;
+    margin: 0 60px;
+    h2 {
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 150%;
+        &:not(:last-child) {
+            margin-bottom: 18px;
+        }
+    }
+}
+
+.slider {
+    padding-top: 100px;
+    width: 100%;
+    max-width: 732px;
+    margin: 0 auto 94px;
+}
+
+.swiper {
+    overflow: visible !important;
+}
+
+.reviews {
+    width: 100%;
+    max-width: 410px;
+    margin: 0 auto;
+}
+.d1, .d2, .d3, .d4 {
+    top: 0;
+    position: absolute;
+}
+
+.d3 {
+    left: 43%;
+    top: -10%;
+}
+
+.d1 {
+    top: -5%;
+    left: 20%;
+}
+
+.d2 {
+    top: 3%;
+    left: 28%;
+}
+
+.d4 {
+    top: 20%;
+    right: 0;
+}

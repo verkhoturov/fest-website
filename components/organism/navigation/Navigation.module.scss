@@ -1,0 +1,17 @@
+.nav {
+    ul {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+    }
+
+    li a {
+        font-weight: 700;
+        font-family: 'Inter', sans-serif;
+        color: var(--c-light);
+        transition: color .2s linear;
+        &.active {
+            color: var(--c-dark);
+        }
+    }
+}

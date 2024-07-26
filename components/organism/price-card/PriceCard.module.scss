@@ -1,0 +1,36 @@
+.wrap {
+    &:not(:last-child) {
+        margin-bottom: 14px;
+    }
+}
+
+.card {
+    background-color: rgba(#58E9C6, .11);
+    padding: 28px 34px;
+    border-radius: 0 32px 32px 0;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+
+    svg {
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+    }
+}
+
+.price {
+    margin-right: 8px;
+    color: var(--c-dark);
+}
+
+.text {
+    font-size: 20px;
+    color: var(--c-light);
+}
+
+.date {
+    font-size: 30px;
+    padding: 18px 20px;
+}

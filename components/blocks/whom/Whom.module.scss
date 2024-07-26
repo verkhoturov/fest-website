@@ -1,0 +1,90 @@
+.block {
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    h2.title {
+        margin-bottom: 24px;
+    }
+
+    p.text {
+        font-size: 24px;
+        margin-bottom: 64px;
+    }
+}
+
+.list {
+    position: relative;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    z-index: 100;
+    transform: translate(-50%, -50%);
+}
+
+.card {
+    width: 383px;
+    height: 383px;
+    border-radius: 50%;
+    background-color: #E7FFF9;
+    padding: 24px 60px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    mix-blend-mode: multiply;
+
+    &:nth-child(2) {
+        margin-right: -25px;
+    }
+    &:nth-child(3) {
+        margin-left: -25px;
+    }
+
+    &:nth-last-child(1) {
+        margin-top: -100px;
+    }
+
+    h4 {
+        font-size: 24px;
+    }
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6 {
+    position: absolute;
+}
+
+.d1 {
+    top: 40px;
+    left: 25%;
+}
+
+.d2 {
+    top: 14%;
+    left: 13%;
+}
+
+.d3 {
+    top: 10%;
+    right: 6%;
+}
+
+.d4 {
+    top: 20%;
+    right: -5%;
+}
+
+.d5 {
+    top: 34%;
+    right: 0;
+}

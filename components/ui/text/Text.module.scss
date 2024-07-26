@@ -1,0 +1,10 @@
+.text {
+    font-weight: 500;
+    font-size: 18px;
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+}
+.center {
+    text-align: center;
+}

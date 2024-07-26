@@ -1,0 +1,129 @@
+.hero {
+    position: relative;
+}
+
+.img {
+    margin: 0 -120px;
+    min-height: 785px;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+h4.supTitle {
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.title {
+    font-size: 54px;
+    line-height: 100%;
+    margin-bottom: 32px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    width: 100%;
+    max-width: 164px;
+    margin-right: 70px;
+}
+
+.date {
+    color: #F8539D;
+}
+
+.content {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    width: 100%;
+}
+
+.brands {
+    margin-top: 132px;
+    opacity: 1 !important;
+    max-width: 750px;
+}
+
+
+.misson {
+    position: relative;
+    z-index: 100;
+    margin-top: -70px;
+    background-color: var(--c-white);
+    border: 1px solid var(--c-gray);
+    border-radius: 32px;
+    margin-bottom: 100px;
+    overflow: hidden;
+    h2 {
+        font-size: 38px;
+        margin-bottom: 8px;
+    }
+
+    h4 {
+        font-size: 24px;
+        margin-bottom: 18px;
+    }
+
+    ul {
+        font-size: 24px;
+        color: var(--c-dark);
+        li {
+            display: flex;
+            align-items: center;
+            &::before {
+                content: "";
+                transform: translateY(-5px);
+                margin-right: 15px;
+                display: block;
+                width: 10px;
+                height: 10px;
+                border-radius: 50%;
+                background-color: var(--c-gray);
+            }
+        }
+    }
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .col {
+        padding: 70px 32px 70px 80px;
+    }
+
+    .play {
+        width: 100%;
+        max-width: 440px;
+        background-color: rgba(#58E9C6, .11);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h4 {
+            margin-bottom: 0;
+            margin-top: 18px;
+        }
+    }
+}
+
+
+.d1 {
+    position: absolute;
+    z-index: -1;
+    bottom: 220px;
+    right: -30px;
+}
+
+.d2 {
+    position: absolute;
+    bottom: 100px;
+    right: -120px;
+}

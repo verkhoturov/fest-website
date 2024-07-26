@@ -1,0 +1,27 @@
+.block {
+    padding: 100px 0 240px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    width: 100%;
+    &:first-child {
+        max-width: 510px;
+        margin-right: 32px;
+    }
+    &:last-child {
+        margin-top: 45px;
+    }
+}
+
+.title {
+    margin-bottom: 32px;
+}
+
+.text {
+
+}

@@ -1,0 +1,54 @@
+.block {
+    padding: 100px 0 85px;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 64px;
+}
+
+.content {
+    margin-bottom: 64px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+}
+
+.d1, .d2, .d3, .d4, .d5, .d6 {
+    position: absolute;
+}
+
+.d1 {
+    top: 45%;
+    left: -10%;
+}
+
+.d2 {
+    top: 64%;
+    left: -30px;
+}
+
+.d3 {
+    top: 20%;
+    right: 25%;
+    z-index: -1;
+}
+
+.d4 {
+    top: 16%;
+    right: 3%;
+}
+
+.d5 {
+    top: 30%;
+    right: -5%;
+}
+
+.d6 {
+    top: 61%;
+    left: 20%;
+}
