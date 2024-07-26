@@ -26,6 +26,7 @@
 }
 
 .text {
+    margin: 0 !important;
     font-size: 20px;
     color: var(--c-light);
 }
@@ -33,4 +34,8 @@
 .date {
     font-size: 30px;
     padding: 18px 20px;
+    @media (max-width: 1024px) {
+        font-size: 18px;
+        padding: 10px 15px;
+    }
 }

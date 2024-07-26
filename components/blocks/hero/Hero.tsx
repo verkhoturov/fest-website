@@ -6,7 +6,7 @@ import Image from 'next/image';
 import Title from '@/components/ui/title';
 import Text from '@/components/ui/text';
 import Brands from '@/components/organism/brands';
-import { RegisterCall } from '@/components/blocks/hero/Register';
+import { RegisterCall } from '@/components/organism/RegisterCall';
 
 const Hero = () => {
     return (
@@ -28,7 +28,7 @@ const Hero = () => {
                         Practices in Business
                     </Title>
                     <div className={styles.flex}>
-                        <RegisterCall />
+                        <RegisterCall className={styles.btn} />
                         <Text isRaleway className={styles.date}>
                             16-18 august | Nurmuižas viesnīca
                         </Text>

@@ -4,6 +4,7 @@ import Navigation from '@/components/organism/navigation';
 import Brands from '@/components/organism/brands';
 import Target from '@/components/ui/target';
 import Button from '@/components/ui/button';
+import {RegisterCall} from "@/components/organism/RegisterCall";
 
 const target = [
     { id: 1, href: '/', icon: 'fb' },
@@ -33,11 +34,12 @@ export const Footer = () => {
                         <a href="mailto:e.pavlenko@gmail.com">wedensky10@gmail.com</a>
                     </div>
                     <div className={styles.col}>
-                        <Button>Register</Button>
+                        <RegisterCall />
                     </div>
                 </div>
 
                 <Target variant="second" className={styles.target} data={target} />
+                <RegisterCall className={styles.btn_mob} />
                 <Brands className={styles.brands} />
             </div>
         </footer>

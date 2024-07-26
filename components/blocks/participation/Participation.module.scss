@@ -1,18 +1,32 @@
 .block {
     position: relative;
     padding: 75px 0 100px;
+
+    @media (max-width: 1024px) {
+        padding: 32px 0;
+    }
 }
 .title {
     margin-bottom: 18px;
+    @media (max-width: 1024px) {
+        margin-bottom: 30px;
+    }
 }
 
 .block .text {
     margin-bottom: 124px;
+    @media (max-width: 600px) {
+        margin-bottom: 30px;
+    }
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 600px) {
+        display: block;
+    }
 }
 
 .col {
@@ -30,11 +44,27 @@
 .btn {
     width: 100%;
     max-width: 384px;
+    &.btn_mob {
+        display: none;
+    }
+    @media (max-width: 600px) {
+        display: none;
+        max-width: 246px;
+        margin: 0 auto;
+        &.btn_mob {
+            display: block;
+            margin-top: 40px;
+        }
+    }
 }
 
 .d1, .d2, .d3, .d4, .d5 {
     top: 0;
     position: absolute;
+
+    @media (max-width: 768px) {
+        display: none;
+    }
 }
 
 .d3 {
