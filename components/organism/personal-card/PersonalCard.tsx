@@ -22,14 +22,15 @@ interface Props {
 }
 
 const loadIcon = (type: string) => {
-    return type === 'fb' ? '/svg/s-fb.svg' : type === 'in' ? '/svg/s-in.svg' : '';
+    return type === 'fb' ? '/svg/s-fb.svg' : type === 'in' ? '/svg/s-in.svg' : type === 'web' ? '/svg/s-web.svg' : type == "inst" ? 
+    '/svg/s-inst.svg' :  type === "youtube" ? '/svg/s-youtube.svg' :  '';
 };
 
 export const PersonalCard = ({ className, data }: Props) => {
     return (
         <div className={classNames(styles.card, className)}>
             <div className={styles.image}>
-                <Image src={data.image} alt="" width={225} height={260} />
+                <Image src={data.image || "/images/lead/placeholder.png" } alt="" width={225} height={260} />
                 <div className={styles.soc}>
                     {data.social.map((item: SocData) => (
                         <a href={item.href} key={item.id} target="_blank">

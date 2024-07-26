@@ -18,13 +18,13 @@ const data: DataModel[] = [
         social: [
             {
                 id: '01',
-                icon: 'fb',
-                href: '/',
+                icon: 'web',
+                href: 'https://wedensky.com',
             },
             {
                 id: '02',
-                icon: 'in',
-                href: '/',
+                icon: 'fb',
+                href: 'https://www.facebook.com/profile.php?id=61560256948246',
             },
         ],
         name: 'Lea <br/> Wedensky',
@@ -39,13 +39,8 @@ const data: DataModel[] = [
         social: [
             {
                 id: '01',
-                icon: 'fb',
-                href: '/',
-            },
-            {
-                id: '02',
-                icon: 'in',
-                href: '/',
+                icon: 'web',
+                href: 'https://futures.land',
             },
         ],
         name: 'Alena <br/> Uhlianica',
@@ -60,13 +55,18 @@ const data: DataModel[] = [
         social: [
             {
                 id: '01',
-                icon: 'fb',
-                href: '/',
+                icon: 'inst',
+                href: 'https://www.instagram.com/luckycharmcollective',
             },
             {
                 id: '02',
-                icon: 'in',
-                href: '/',
+                icon: 'web',
+                href: 'https://www.lcc.team',
+            },
+            {
+                id: '03',
+                icon: 'inst',
+                href: 'https://www.instagram.com/babajicenter',
             },
         ],
         name: 'Artur <br/> Shakh-Nazarov',
@@ -84,13 +84,13 @@ const data: DataModel[] = [
         social: [
             {
                 id: '01',
-                icon: 'fb',
-                href: '/',
+                icon: 'inst',
+                href: 'https://www.instagram.com/luckycharmcollective',
             },
             {
                 id: '02',
-                icon: 'in',
-                href: '/',
+                icon: 'web',
+                href: 'https://www.lcc.team',
             },
         ],
         name: 'Vitaly <br/> Yumaev',
@@ -100,6 +100,25 @@ const data: DataModel[] = [
             <p>As part of Lucky Charm Collective, he organises events and conducts various practices that calm the mind, strengthen the spirit and develop willpower. For 17 years she has successfully developed a business in automotive programming while exploring new directions in self-discovery and self-improvement. He pays special attention to discipline, goal setting, and morality.</p>
             <p>At the festival Lea will conduct a workshop Corporate Culture Constructor for Conscious</p>
             <p>Entrepreneurship as well as creative practices and workshops.</p>
+        `,
+    },
+    {
+        id: 5,
+        image: '',
+        social: [
+            {
+                id: '01',
+                icon: 'youtube',
+                href: 'https://www.youtube.com/@VOLKOVADJ',
+            },
+        ],
+        name: 'Anastasia <br/> Volkova',
+        description: `
+            <p>DJ and sound producer known for her cinematic DJ sets where music blends perfectly with
+            nature. </p>
+            <p>Besides live performances and DJ sets, Volkova is an experienced guide of ecstatic
+            dance and has been organising various events and retreats on this topic for over 10 years.
+            Anastasia will conduct ecstatic dance at the festival.</p>
         `,
     },
 ];

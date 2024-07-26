@@ -5,6 +5,20 @@
     border-radius: 32px;
     margin-bottom: 20px;
 
+    transition: all .2s linear;
+
+    &:hover {
+        background: #EDFDF9;
+
+        .date {
+            color: #FB21A1;
+        }
+
+        .icon svg path {
+            stroke: #FB21A1;
+        }
+    }
+
     @media (max-width: 768px) {
         padding: 25px 20px;
     }
@@ -47,6 +61,10 @@
     right: -20px;
     transform: translateY(-50%);
 
+    & > svg > path {
+        transition: all .2s linear;
+    } 
+
     @media (max-width: 768px) {
         right: -10px;
     }
@@ -83,6 +101,8 @@
     max-width: 350px;
     font-size: 30px;
     font-weight: 700;
+
+    transition: all .2s linear;
 
     @media (max-width: 768px) {
         font-size: 24px;
