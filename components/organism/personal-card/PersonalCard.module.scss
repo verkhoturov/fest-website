@@ -5,7 +5,11 @@
 .image {
     position: relative;
     margin-bottom: 32px;
+    min-width: 225px;
+    max-width: 225px;
     img {
+        width: 100%;
+        object-fit: cover;
         border-radius: 32px;
     }
 }
@@ -16,6 +20,11 @@
     bottom: -13px;
     display: flex;
     gap: 10px;
+
+    @media (max-width: 768px) {
+        left: 10px;
+    }
+
     a {
         transition: .2s linear;
         &:hover {
@@ -31,12 +40,21 @@
     margin-right: -24px;
     margin-left: 24px;
     color: #000;
+
+    @media (max-width: 768px) {
+        margin-right: 0;
+        margin-left: 10px;
+    }
 }
 
 .title {
     font-size: 24px;
     margin-bottom: 20px;
     line-height: 110%;
+
+    @media (max-width: 1280px) {
+        font-size: 18px;
+    }
 }
 
 .text {
