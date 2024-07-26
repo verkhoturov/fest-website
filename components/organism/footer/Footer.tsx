@@ -6,7 +6,7 @@ import Navigation from '@/components/organism/navigation';
 import Brands from '@/components/organism/brands';
 import Target from '@/components/ui/target';
 import Button from '@/components/ui/button';
-import {RegisterCall} from "@/components/organism/RegisterCall";
+import { RegisterCall } from '@/components/organism/RegisterCall';
 
 const target = [
     { id: 1, href: 'https://m.facebook.com/events/1433819980660964', icon: 'fb' },

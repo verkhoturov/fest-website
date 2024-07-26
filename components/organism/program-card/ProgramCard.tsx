@@ -4,9 +4,17 @@ import { memo, useState } from 'react';
 import styles from './ProgramCard.module.scss';
 import classNames from 'classnames';
 
-const PlusIcon = () => <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M12 5V12M12 12V19M12 12H5M12 12H19" stroke="#252432" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-</svg>
+const PlusIcon = () => (
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+            d="M12 5V12M12 12V19M12 12H5M12 12H19"
+            stroke="#252432"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+        />
+    </svg>
+);
 
 interface Props {
     className?: string;

@@ -1,1 +1,1 @@
-export {RegisterCall} from './RegisterCall';
+export { RegisterCall } from './RegisterCall';

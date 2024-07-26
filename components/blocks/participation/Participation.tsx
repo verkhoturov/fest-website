@@ -6,8 +6,8 @@ import Title from '@/components/ui/title';
 import Text from '@/components/ui/text';
 import PriceCard from '@/components/organism/price-card';
 import Image from 'next/image';
-import classNames from "classnames";
-import {RegisterCall} from "@/components/organism/RegisterCall";
+import classNames from 'classnames';
+import { RegisterCall } from '@/components/organism/RegisterCall';
 
 const Participation = () => {
     return (

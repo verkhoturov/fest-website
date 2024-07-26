@@ -3,7 +3,7 @@ import styles from './Program.module.scss';
 import Title from '@/components/ui/title';
 import ProgramCard from '@/components/organism/program-card';
 import Image from 'next/image';
-import {RegisterCall} from "@/components/organism/RegisterCall";
+import { RegisterCall } from '@/components/organism/RegisterCall';
 
 interface DataModel {
     id: number;
