@@ -106,7 +106,7 @@ const data: DataModel[] = [
 
 const Leaders = () => {
     return (
-        <div className={styles.block}>
+        <div className={styles.block} id="speak">
             <Title as="h2">Speakers and Leaders:</Title>
 
             <div className={styles.person}>

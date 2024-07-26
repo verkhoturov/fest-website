@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Footer.module.scss';
 import Navigation from '@/components/organism/navigation';
@@ -7,9 +9,9 @@ import Button from '@/components/ui/button';
 import {RegisterCall} from "@/components/organism/RegisterCall";
 
 const target = [
-    { id: 1, href: '/', icon: 'fb' },
-    { id: 2, href: '/', icon: 'tg' },
-    { id: 3, href: '/', icon: 'whp' },
+    { id: 1, href: 'https://m.facebook.com/events/1433819980660964', icon: 'fb' },
+    // { id: 2, href: '/', icon: 'tg' },
+    // { id: 3, href: '/', icon: 'whp' },
 ];
 
 export const Footer = () => {

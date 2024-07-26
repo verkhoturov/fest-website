@@ -10,9 +10,9 @@ import classNames from 'classnames';
 import { useScreenSize } from '@/utils';
 
 const target = [
-    { id: 1, href: '/', icon: 'fb' },
-    { id: 2, href: '/', icon: 'tg' },
-    { id: 3, href: '/', icon: 'whp' },
+    { id: 1, href: 'https://m.facebook.com/events/1433819980660964', icon: 'fb' },
+    // { id: 2, href: '/', icon: 'tg' },
+    // { id: 3, href: '/', icon: 'whp' },
 ];
 
 export const Header = () => {

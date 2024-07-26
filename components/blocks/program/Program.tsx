@@ -1,4 +1,4 @@
-import { memo, useState } from 'react';
+import { memo } from 'react';
 import styles from './Program.module.scss';
 import Title from '@/components/ui/title';
 import ProgramCard from '@/components/organism/program-card';
@@ -66,7 +66,7 @@ const data: DataModel[] = [
 
 const Program = () => {
     return (
-        <div className={styles.block}>
+        <div className={styles.block} id="prog">
             <Title as="h2" className={styles.title}>
                 Program:
             </Title>

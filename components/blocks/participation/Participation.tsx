@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Participation.module.scss';
 import Title from '@/components/ui/title';
@@ -9,7 +11,7 @@ import {RegisterCall} from "@/components/organism/RegisterCall";
 
 const Participation = () => {
     return (
-        <div className={styles.block}>
+        <div className={styles.block} id="cost">
             <div className={styles.flex}>
                 <div className={styles.col}>
                     <Title as="h2" className={styles.title}>
