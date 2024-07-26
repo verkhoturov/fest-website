@@ -1,10 +1,18 @@
 .block {
     padding: 100px 0 240px;
+
+    @media (max-width: 1024px) {
+        padding: 32px 0 65px;
+    }
 }
 
 .flex {
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 500px) {
+        display: block;
+    }
 }
 
 .col {
@@ -12,14 +20,28 @@
     &:first-child {
         max-width: 510px;
         margin-right: 32px;
+        @media (max-width: 500px) {
+            margin-right: 0;
+        }
     }
     &:last-child {
         margin-top: 45px;
+
+        @media (max-width: 1024px) {
+            margin-top: 20px;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
     }
 }
 
 .title {
     margin-bottom: 32px;
+    @media (max-width: 768px) {
+        margin-bottom: 40px;
+    }
 }
 
 .text {

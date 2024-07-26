@@ -1,11 +1,9 @@
-'use client';
-
 import { memo } from 'react';
 import styles from './Program.module.scss';
 import Title from '@/components/ui/title';
-import Button from '@/components/ui/button';
 import ProgramCard from '@/components/organism/program-card';
 import Image from 'next/image';
+import {RegisterCall} from "@/components/organism/RegisterCall";
 
 interface DataModel {
     id: number;
@@ -78,17 +76,8 @@ const Program = () => {
                     <ProgramCard data={item} key={item.id} isOpen={i === 0} />
                 ))}
             </div>
-            <Button
-                className={styles.btn}
-                onClick={() =>
-                    window.open(
-                        `https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform`,
-                        '_blank',
-                    )
-                }
-            >
-                Register
-            </Button>
+
+            <RegisterCall className={styles.btn} />
 
             <div className={styles.d1}>
                 <Image src="/svg/decor/p-d1.svg" alt="" width={60} height={60} />

@@ -4,9 +4,10 @@ import { memo } from 'react';
 import styles from './Participation.module.scss';
 import Title from '@/components/ui/title';
 import Text from '@/components/ui/text';
-import Button from '@/components/ui/button';
 import PriceCard from '@/components/organism/price-card';
 import Image from 'next/image';
+import classNames from "classnames";
+import {RegisterCall} from "@/components/organism/RegisterCall";
 
 const Participation = () => {
     return (
@@ -20,22 +21,14 @@ const Participation = () => {
                         The price includes accommodation in a double room at Nurmuža Hotel, meals,
                         participation in the programme.
                     </Text>
-                    <Button
-                        className={styles.btn}
-                        onClick={() =>
-                            window.open(
-                                `https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform`,
-                                '_blank',
-                            )
-                        }
-                    >
-                        Register
-                    </Button>
+                    <RegisterCall className={styles.btn} />
                 </div>
                 <div className={styles.col}>
                     <PriceCard price="€460" date="if paid by the end of July 2024" />
                     <PriceCard price="€460" date="if paid from 1 August" />
                 </div>
+
+                <RegisterCall className={classNames(styles.btn, styles.btn_mob)} />
             </div>
 
             <div className={styles.d1}>
