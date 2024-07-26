@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Header.module.scss';
 import Link from "next/link";
@@ -13,7 +15,8 @@ const target = [
     { id: 3, href: '/', icon: 'whp' },
 ]
 
-export const Header = (props) => {
+export const Header = () => {
+    const { isMobile } = useScreenSize();
     return (
         <header className={styles.header}>
             <div className={classNames(styles.wrap, 'container')}>
@@ -21,12 +24,12 @@ export const Header = (props) => {
                     <Image src="/images/logo.svg" alt="" width={150} height={40} />
                 </Link>
 
-                {/*{!isMobile && (*/}
-                {/*    <>*/}
-                {/*        <Navigation />*/}
-                {/*        <Target data={target} />*/}
-                {/*    </>*/}
-                {/*)}*/}
+                {!isMobile && (
+                    <>
+                        <Navigation />
+                        <Target data={target} />
+                    </>
+                )}
             </div>
         </header>
     );
