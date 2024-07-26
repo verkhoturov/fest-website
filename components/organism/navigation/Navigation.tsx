@@ -1,4 +1,7 @@
+'use client';
+
 import { memo } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 import classNames from 'classnames';
 import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
@@ -15,18 +18,24 @@ const Navigation = ({ className }: Props) => {
         <nav className={navClass}>
             <ul>
                 <li>
-                    <a href="#prog" className={styles.active}>
+                    <ScrollLink href="/#prog" to="prog" offset={-50} duration={500} smooth spy>
                         Program
-                    </a>
+                    </ScrollLink>
                 </li>
                 <li>
-                    <a href="#speak">Speakers</a>
+                    <ScrollLink href="/#speak" to="speak" offset={-50} duration={500} smooth spy>
+                        Speakers
+                    </ScrollLink>
                 </li>
                 <li>
-                    <a href="#venue">Venue</a>
+                    <ScrollLink href="/#venue" to="venue" offset={-50} duration={500} smooth spy>
+                        Venue
+                    </ScrollLink>
                 </li>
                 <li>
-                    <a href="#cost">Cost</a>
+                    <ScrollLink href="/#cost" to="cost" offset={-50} duration={500} smooth spy>
+                        Cost
+                    </ScrollLink>
                 </li>
             </ul>
         </nav>

@@ -10,7 +10,8 @@
         font-family: 'Inter', sans-serif;
         color: var(--c-light);
         transition: color .2s linear;
-        &.active {
+        &.active,
+        &:hover {
             color: var(--c-dark);
         }
     }

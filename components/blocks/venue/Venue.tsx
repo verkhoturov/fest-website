@@ -13,7 +13,7 @@ const images = ['/images/ven/1.png', '/images/ven/2.png', '/images/ven/3.png'];
 const Venue = () => {
     const swiperRef = useRef<any>(null);
     return (
-        <div className={style.block}>
+        <div className={style.block} id="venue">
             <div className={style.head}>
                 <button className={style.nav} onClick={() => swiperRef.current.slidePrev()}>
                     <Image src="/svg/to-left.svg" alt="" width={78} height={78} />

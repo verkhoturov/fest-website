@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Participation.module.scss';
 import Title from '@/components/ui/title';
@@ -8,7 +10,7 @@ import Image from 'next/image';
 
 const Participation = () => {
     return (
-        <div className={styles.block}>
+        <div className={styles.block} id="cost">
             <div className={styles.flex}>
                 <div className={styles.col}>
                     <Title as="h2" className={styles.title}>
@@ -18,7 +20,17 @@ const Participation = () => {
                         The price includes accommodation in a double room at Nurmuža Hotel, meals,
                         participation in the programme.
                     </Text>
-                    <Button className={styles.btn}>Register</Button>
+                    <Button
+                        className={styles.btn}
+                        onClick={() =>
+                            window.open(
+                                `https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform`,
+                                '_blank',
+                            )
+                        }
+                    >
+                        Register
+                    </Button>
                 </div>
                 <div className={styles.col}>
                     <PriceCard price="€460" date="if paid by the end of July 2024" />

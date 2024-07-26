@@ -68,7 +68,7 @@ const data: DataModel[] = [
 
 const Program = () => {
     return (
-        <div className={styles.block}>
+        <div className={styles.block} id="prog">
             <Title as="h2" className={styles.title}>
                 Program:
             </Title>
@@ -78,7 +78,15 @@ const Program = () => {
                     <ProgramCard data={item} key={item.id} isOpen={i === 0} />
                 ))}
             </div>
-            <Button className={styles.btn} onClick={console.log}>
+            <Button
+                className={styles.btn}
+                onClick={() =>
+                    window.open(
+                        `https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform`,
+                        '_blank',
+                    )
+                }
+            >
                 Register
             </Button>
 

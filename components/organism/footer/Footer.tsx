@@ -1,3 +1,5 @@
+'use client';
+
 import { memo } from 'react';
 import styles from './Footer.module.scss';
 import Navigation from '@/components/organism/navigation';
@@ -33,7 +35,16 @@ export const Footer = () => {
                         <a href="mailto:e.pavlenko@gmail.com">wedensky10@gmail.com</a>
                     </div>
                     <div className={styles.col}>
-                        <Button>Register</Button>
+                        <Button
+                            onClick={() =>
+                                window.open(
+                                    `https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform`,
+                                    '_blank',
+                                )
+                            }
+                        >
+                            Register
+                        </Button>
                     </div>
                 </div>
 
