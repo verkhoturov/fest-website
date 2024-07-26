@@ -5,7 +5,7 @@ import styles from './Title.module.scss';
 interface TitleProps extends HTMLAttributes<HTMLHeadingElement | HTMLElement> {
     as?: ElementType;
     center?: boolean;
-    size?: 24
+    size?: 24;
 }
 
 const Title = (props: TitleProps) => {
@@ -14,7 +14,7 @@ const Title = (props: TitleProps) => {
         styles.title,
         className,
         size === 24 && styles.s24,
-        center && styles.center
+        center && styles.center,
     );
 
     return (

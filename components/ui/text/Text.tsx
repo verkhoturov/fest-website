@@ -1,10 +1,9 @@
-
 import { ElementType, HTMLAttributes, memo } from 'react';
 import classNames from 'classnames';
 import styles from './Text.module.scss';
-import {Inter} from "next/font/google";
+import { Inter } from 'next/font/google';
 
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ['latin'] });
 
 interface TextProps extends HTMLAttributes<HTMLParagraphElement | HTMLElement> {
     as?: ElementType;

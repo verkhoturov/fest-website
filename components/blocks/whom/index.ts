@@ -1,1 +1,1 @@
-export { default } from "./Whom";
+export { default } from './Whom';

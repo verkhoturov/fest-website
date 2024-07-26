@@ -1,7 +1,7 @@
 import { memo } from 'react';
-import classNames from "classnames";
-import {Inter} from "next/font/google";
-const inter = Inter({ subsets: ["latin"] });
+import classNames from 'classnames';
+import { Inter } from 'next/font/google';
+const inter = Inter({ subsets: ['latin'] });
 import styles from './Navigation.module.scss';
 
 interface Props {
@@ -15,7 +15,9 @@ const Navigation = ({ className }: Props) => {
         <nav className={navClass}>
             <ul>
                 <li>
-                    <a href="#prog" className={styles.active}>Program</a>
+                    <a href="#prog" className={styles.active}>
+                        Program
+                    </a>
                 </li>
                 <li>
                     <a href="#speak">Speakers</a>

@@ -2,18 +2,18 @@
 
 import { memo } from 'react';
 import styles from './Header.module.scss';
-import Link from "next/link";
-import Image from "next/image";
-import Target from "@/components/ui/target";
-import Navigation from "@/components/organism/navigation";
-import classNames from "classnames";
-import {useScreenSize} from "@/utils";
+import Link from 'next/link';
+import Image from 'next/image';
+import Target from '@/components/ui/target';
+import Navigation from '@/components/organism/navigation';
+import classNames from 'classnames';
+import { useScreenSize } from '@/utils';
 
 const target = [
     { id: 1, href: '/', icon: 'fb' },
     { id: 2, href: '/', icon: 'tg' },
     { id: 3, href: '/', icon: 'whp' },
-]
+];
 
 export const Header = () => {
     const { isMobile } = useScreenSize();

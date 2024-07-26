@@ -1,1 +1,1 @@
-export {useScreenSize} from "@/utils/useScreenSize";
+export { useScreenSize } from '@/utils/useScreenSize';

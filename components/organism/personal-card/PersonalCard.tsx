@@ -1,10 +1,14 @@
 import { memo } from 'react';
 import styles from './PersonalCard.module.scss';
-import Image from "next/image";
-import Title from "@/components/ui/title";
-import classNames from "classnames";
+import Image from 'next/image';
+import Title from '@/components/ui/title';
+import classNames from 'classnames';
 
-interface SocData { id: number | string, icon: string, href: string }
+interface SocData {
+    id: number | string;
+    icon: string;
+    href: string;
+}
 
 interface Props {
     className?: string;
@@ -14,12 +18,12 @@ interface Props {
         social: SocData[];
         name: string;
         description: string;
-    }
+    };
 }
 
 const loadIcon = (type: string) => {
     return type === 'fb' ? '/svg/s-fb.svg' : type === 'in' ? '/svg/s-in.svg' : '';
-}
+};
 
 export const PersonalCard = ({ className, data }: Props) => {
     return (
@@ -29,17 +33,24 @@ export const PersonalCard = ({ className, data }: Props) => {
                 <div className={styles.soc}>
                     {data.social.map((item: SocData) => (
                         <a href={item.href} key={item.id} target="_blank">
-                            <Image src={loadIcon(item.icon)} alt="" width={26} height={26}/>
+                            <Image src={loadIcon(item.icon)} alt="" width={26} height={26} />
                         </a>
                     ))}
                 </div>
             </div>
             <div className={styles.body}>
-                <Title as="h3" className={styles.title} dangerouslySetInnerHTML={{__html: data.name}} />
-                <div className={styles.text} dangerouslySetInnerHTML={{__html: data.description}} />
+                <Title
+                    as="h3"
+                    className={styles.title}
+                    dangerouslySetInnerHTML={{ __html: data.name }}
+                />
+                <div
+                    className={styles.text}
+                    dangerouslySetInnerHTML={{ __html: data.description }}
+                />
             </div>
         </div>
     );
 };
 
-export default memo(PersonalCard)
+export default memo(PersonalCard);

@@ -3,13 +3,19 @@
 :root {
     --c-dark: #252432;
     --c-dark2: #14121f;
-    --c-light: #8987A1;
+    --c-light: #8987a1;
     --c-white: #fff;
-    --c-green: #58E9C6;
-    --c-gray: #D6DDED;
+    --c-green: #58e9c6;
+    --c-gray: #d6dded;
 }
 
-h1, h2, h3, h4, h5, h5, p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+p {
     margin: 0;
 }
 
@@ -69,7 +75,6 @@ ul {
     list-style-type: none;
     padding: 0;
 }
-
 
 button {
     cursor: pointer;

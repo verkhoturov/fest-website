@@ -8,10 +8,12 @@ export const useTransition = (isOpen: boolean) => {
         let time = null;
         if (isOpen) {
             document.body.style.overflow = 'hidden';
-            document.body.style.setProperty('--open-modal', `${window.innerWidth - document.documentElement.clientWidth}px`);
+            document.body.style.setProperty(
+                '--open-modal',
+                `${window.innerWidth - document.documentElement.clientWidth}px`,
+            );
             return setOpen(true);
-        }
-        else {
+        } else {
             document.body.removeAttribute('style');
             time = setTimeout(() => setOpen(false), ms);
         }
@@ -19,6 +21,6 @@ export const useTransition = (isOpen: boolean) => {
     }, [isOpen, setOpen]);
 
     return {
-        toggleOpen: open
+        toggleOpen: open,
     };
 };
