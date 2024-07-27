@@ -6,12 +6,17 @@
 }
 
 .img {
-    &:nth-child(1) img {
-        @media (max-width: 768px) {
-            width: 150px;
+    @media (max-width: 768px) {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            width: auto;
         }
     }
 
+    /*
     &:nth-child(1) img {
         @media (max-width: 768px) {
             width: 150px;
@@ -30,12 +35,6 @@
         }
     }
 
-    &:nth-child(4) {
-        @media (max-width: 768px) {
-            margin-left: -20px;
-        }
-    }
-
     &:nth-child(4) img {
         @media (max-width: 768px) {
             width: 200px;
@@ -47,6 +46,7 @@
             width: 125px;
         }
     }
+    */
 }
 
 .second {

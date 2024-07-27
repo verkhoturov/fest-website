@@ -20,6 +20,23 @@
     }
 }
 
+.cardPromo {
+    background-color: unset;
+    border: 2px solid #EDFDF9;
+
+    > h3 {
+        color: #FB21A1;
+    }
+
+    svg path {
+        stroke: #FB21A1;
+    }
+
+    @media (max-width: 1024px) {
+        border: 1px solid #EDFDF9;
+    }
+}
+
 .price {
     margin-right: 8px;
     color: var(--c-dark);

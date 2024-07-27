@@ -49,9 +49,9 @@ const Venue = () => {
                 </Swiper>
             </div>
 
-            <div className={style.reviews}>
+            {/* <div className={style.reviews}>
                 <Image src="/images/reviews.png" alt="" width={410} height={84} />
-            </div>
+            </div> */}
             <div className={style.d1}>
                 <Image src="/svg/decor/v-d1.svg" alt="" width={28} height={28} />
             </div>

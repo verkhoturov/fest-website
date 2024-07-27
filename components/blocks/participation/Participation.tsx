@@ -9,6 +9,9 @@ import Image from 'next/image';
 import classNames from 'classnames';
 import { RegisterCall } from '@/components/organism/RegisterCall';
 
+const FORM_LINK =
+    'https://docs.google.com/forms/d/e/1FAIpQLSdxuYc2Ib0UgJCbe-1riKqp3UEz6NQIMDj7MF-7vOlaKLrkjQ/viewform';
+
 const Participation = () => {
     return (
         <div className={styles.block} id="cost">
@@ -21,15 +24,31 @@ const Participation = () => {
                         The price includes accommodation in a double room at Nurmuža Hotel, meals,
                         participation in the programme.
                     </Text>
-                    <RegisterCall className={styles.btn} />
                 </div>
                 <div className={styles.col}>
-                    <PriceCard price="€460" date="if paid by the end of July 2024" />
-                    <PriceCard price="€460" date="if paid from 1 August" />
+                    <PriceCard
+                        price="€460"
+                        date="if paid by the end of July 2024"
+                        href={FORM_LINK}
+                        isPromo
+                    />
+                    <PriceCard price="€490" date="if paid from 1 August" href={FORM_LINK} />
                 </div>
-
-                <RegisterCall className={classNames(styles.btn, styles.btn_mob)} />
             </div>
+
+            <div className={styles.flex}>
+                <div className={styles.col}>
+                    <Text className={styles.text}>
+                        The price includes only participation in the programme.
+                    </Text>
+                </div>
+                <div className={styles.col}>
+                    <PriceCard price="€260" date="3-day pass" href={FORM_LINK} />
+                    <PriceCard price="€180" date="1-day pass" href={FORM_LINK} />
+                </div>
+            </div>
+
+            <RegisterCall className={classNames(styles.btn, styles.btn_mob)} />
 
             <div className={styles.d1}>
                 <Image src="/svg/decor/c-d1.svg" alt="" width={40} height={40} />

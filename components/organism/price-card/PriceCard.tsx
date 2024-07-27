@@ -9,9 +9,10 @@ import classNames from 'classnames';
 const inter = Inter({ subsets: ['latin'] });
 
 interface Props {
-    href?: '';
+    href?: string;
     price: string;
     date: string;
+    isPromo?: boolean;
 }
 
 const icon = (
@@ -26,9 +27,13 @@ const icon = (
     </svg>
 );
 
-export const PriceCard = ({ price, date, href }: Props) => {
+export const PriceCard = ({ price, date, href, isPromo }: Props) => {
     const card = href ? (
-        <Link href={href} className={styles.card}>
+        <Link
+            href={href}
+            className={classNames(styles.card, isPromo ? styles.cardPromo : '')}
+            target="_blank"
+        >
             <Title as="h3" className={styles.price}>
                 {price}
             </Title>
@@ -36,7 +41,7 @@ export const PriceCard = ({ price, date, href }: Props) => {
             {icon}
         </Link>
     ) : (
-        <div className={styles.card}>
+        <div className={classNames(styles.card, isPromo ? styles.cardPromo : '')}>
             <Title as="h3" className={classNames(styles.price, inter.className)}>
                 {price}
             </Title>

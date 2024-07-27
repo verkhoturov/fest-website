@@ -104,7 +104,7 @@ const data: DataModel[] = [
     },
     {
         id: 5,
-        image: '',
+        image: '/images/lead/p-5.png',
         social: [
             {
                 id: '01',
