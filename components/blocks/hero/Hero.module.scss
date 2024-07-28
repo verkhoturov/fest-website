@@ -96,8 +96,16 @@ h4.supTitle {
     color: #F8539D;
 
     @media (max-width: 768px) {
-        margin-top: 36px;
         text-align: center;
+
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #EDFDF9;
+        border-radius: 10px;
+        font-weight: bold !important;
+        margin-top: 18px;
     }
 }
 
@@ -201,18 +209,24 @@ h4.supTitle {
         @media (max-width: 1280px) {
             font-size: 18px;
         }
+
         li {
             display: flex;
-            align-items: center;
+            align-items: flex-start;
+
             &::before {
                 content: "";
-                transform: translateY(-5px);
+                transform: translateY(8px);
                 margin-right: 15px;
                 display: block;
                 min-width: 10px;
                 height: 10px;
                 border-radius: 50%;
                 background-color: var(--c-gray);
+            }
+
+            @media (max-width: 1023px) {
+                margin-bottom: 8px;
             }
         }
     }

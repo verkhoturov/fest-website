@@ -10,7 +10,7 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-    title: 'Creative Festival',
+    title: 'TEAL HORIZON',
     description: 'Abundant Future, Design and Mindfulness, Practices in Business',
 };
 

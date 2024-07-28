@@ -4,11 +4,46 @@ import { memo, useRef } from 'react';
 import style from './Venue.module.scss';
 import Title from '@/components/ui/title';
 import Text from '@/components/ui/text';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
+
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
-const images = ['/images/ven/1.png', '/images/ven/2.png', '/images/ven/3.png'];
+import img1 from './images/1.png';
+import img2 from './images/2.webp';
+import img3 from './images/3.webp';
+import img4 from './images/4.webp';
+import img5 from './images/5.webp';
+import img61 from './images/6.1.webp';
+import img62 from './images/6.2.webp';
+import img7 from './images/7.webp';
+import img8 from './images/8.webp';
+import img9 from './images/9.webp';
+import img10 from './images/10.webp';
+import img11 from './images/11.webp';
+import img12 from './images/12.webp';
+import img13 from './images/13.webp';
+import img14 from './images/14.webp';
+import img15 from './images/15.jpg';
+
+const images: StaticImageData[] = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img61,
+    img62,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+];
 
 const Venue = () => {
     const swiperRef = useRef<any>(null);
@@ -38,19 +73,18 @@ const Venue = () => {
                     spaceBetween={100}
                     slidesPerView={1}
                     centeredSlides
-                    onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
-                    {[...images, ...images].map((img: string) => (
+                    {images.map((img) => (
                         <SwiperSlide className={style.slide}>
-                            <Image src={img} alt="" width={732} height={551} />
+                            <Image src={img.src} alt="" width={732} height={551} />
                         </SwiperSlide>
                     ))}
                 </Swiper>
             </div>
 
             {/* <div className={style.reviews}>
-                <Image src="/images/reviews.png" alt="" width={410} height={84} />
+                <Image src="./images/reviews.png" alt="" width={410} height={84} />
             </div> */}
             <div className={style.d1}>
                 <Image src="/svg/decor/v-d1.svg" alt="" width={28} height={28} />

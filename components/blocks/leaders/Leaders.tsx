@@ -47,7 +47,7 @@ const data: DataModel[] = [
         ],
         name: 'Eugene <br/> Pavlenko',
         description: `
-            <p>IT entrepreneur, CEO and founder of AXIOMA, COO at WhiteFlo.As an IT specialist and entrepreneur, Eugene sees the future of conscious entrepreneurship in the combination of spiritual development of breakthrough Information Technologies.</p>
+            <p>IT entrepreneur, CEO and founder of AXIOMA, COO at WhiteFlo. <br/> As an IT specialist and entrepreneur, Eugene sees the future of conscious entrepreneurship in the combination of spiritual development of breakthrough Information Technologies.</p>
             <p>Eugene will speak on the future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship.</p>
         `,
     },
