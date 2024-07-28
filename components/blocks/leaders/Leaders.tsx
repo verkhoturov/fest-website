@@ -4,25 +4,21 @@ import Title from '@/components/ui/title';
 import { PersonalCard } from '@/components/organism/personal-card/PersonalCard';
 
 interface DataModel {
-    id: number | string;
     image: string;
-    social: { id: number | string; icon: string; href: string }[];
+    social: { icon: string; href: string }[];
     name: string;
     description: string;
 }
 
 const data: DataModel[] = [
     {
-        id: 1,
         image: '/images/lead/p-1.png',
         social: [
             {
-                id: '01',
                 icon: 'web',
                 href: 'https://wedensky.com',
             },
             {
-                id: '02',
                 icon: 'fb',
                 href: 'https://www.facebook.com/profile.php?id=61560256948246',
             },
@@ -34,11 +30,59 @@ const data: DataModel[] = [
         `,
     },
     {
-        id: 2,
+        image: '/images/lead/pavlenko.png',
+        social: [
+            {
+                icon: 'fb',
+                href: 'https://m.facebook.com/eugene.pavlenko/',
+            },
+            {
+                icon: 'web',
+                href: 'https://www.axiomadev.com/',
+            },
+            {
+                icon: 'web',
+                href: 'https://www.whiteflo.com/',
+            },
+        ],
+        name: 'Eugene <br/> Pavlenko',
+        description: `
+            <p>IT entrepreneur, CEO and founder of AXIOMA, COO at WhiteFlo.As an IT specialist and entrepreneur, Eugene sees the future of conscious entrepreneurship in the combination of spiritual development of breakthrough Information Technologies.</p>
+            <p>Eugene will speak on the future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship.</p>
+        `,
+    },
+    {
+        image: '/images/lead/doktoroff.png',
+        social: [
+            {
+                icon: 'web',
+                href: 'https://www.theintelligent.vc/',
+            },
+        ],
+        name: 'Andrei <br/> Doktoroff',
+        description: `
+            <p>is an investor & serial entrepreneur, founder & CEO of theIntelligent VC. As an advocate for mind technologies, Andrei believes in the transformative power of combining business acumen with mindfulness principles. This approach has consistently led him to sustainable success for both his ventures and clients.</p>
+            <p>Andrei will speak on his vision and plans of developing a venture ecosystem for mindful intelligent entrepreneurs.</p>
+        `,
+    },
+    {
+        image: '/images/lead/zolotukhin.png',
+        social: [
+            {
+                icon: 'web',
+                href: 'https://innovators.club/',
+            },
+        ],
+        name: 'Eduard <br/> Zolotukhin',
+        description: `
+            <p>is a serial IT entrepreneur and investor, CEO of 3ED Ventures, founder of Innovators.Club, angel investor of DISCOVERCARS.COM.Eduard’s personal mission is to empower and inspire the next wave of entrepreneurs and innovators, encouraging them to dream big and make a tangible impact on the world.</p>
+            <p>Euard will speak about his experience of business development through the realization of spiritual potential, and the vision of Innovators.Club.</p>
+        `,
+    },
+    {
         image: '/images/lead/p-2.png',
         social: [
             {
-                id: '01',
                 icon: 'web',
                 href: 'https://futures.land',
             },
@@ -50,21 +94,17 @@ const data: DataModel[] = [
         `,
     },
     {
-        id: 3,
         image: '/images/lead/p-3.png',
         social: [
             {
-                id: '01',
                 icon: 'inst',
                 href: 'https://www.instagram.com/luckycharmcollective',
             },
             {
-                id: '02',
                 icon: 'web',
                 href: 'https://www.lcc.team',
             },
             {
-                id: '03',
                 icon: 'inst',
                 href: 'https://www.instagram.com/babajicenter',
             },
@@ -79,16 +119,13 @@ const data: DataModel[] = [
         `,
     },
     {
-        id: 4,
         image: '/images/lead/p-4.png',
         social: [
             {
-                id: '01',
                 icon: 'inst',
                 href: 'https://www.instagram.com/luckycharmcollective',
             },
             {
-                id: '02',
                 icon: 'web',
                 href: 'https://www.lcc.team',
             },
@@ -103,11 +140,9 @@ const data: DataModel[] = [
         `,
     },
     {
-        id: 5,
         image: '/images/lead/p-5.png',
         social: [
             {
-                id: '01',
                 icon: 'youtube',
                 href: 'https://www.youtube.com/@VOLKOVADJ',
             },
@@ -129,8 +164,8 @@ const Leaders = () => {
             <Title as="h2">Speakers and Leaders:</Title>
 
             <div className={styles.person}>
-                {data.map((item: DataModel) => (
-                    <PersonalCard key={item.id} data={item} />
+                {data.map((item: DataModel, i) => (
+                    <PersonalCard key={i} data={item} />
                 ))}
             </div>
         </div>

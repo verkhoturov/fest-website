@@ -5,7 +5,6 @@ import Title from '@/components/ui/title';
 import classNames from 'classnames';
 
 interface SocData {
-    id: number | string;
     icon: string;
     href: string;
 }
@@ -13,7 +12,6 @@ interface SocData {
 interface Props {
     className?: string;
     data: {
-        id: number | string;
         image: string;
         social: SocData[];
         name: string;
@@ -46,8 +44,8 @@ export const PersonalCard = ({ className, data }: Props) => {
                     height={260}
                 />
                 <div className={styles.soc}>
-                    {data.social.map((item: SocData) => (
-                        <a href={item.href} key={item.id} target="_blank">
+                    {data.social.map((item: SocData, i) => (
+                        <a href={item.href} key={i} target="_blank">
                             <Image src={loadIcon(item.icon)} alt="" width={26} height={26} />
                         </a>
                     ))}
