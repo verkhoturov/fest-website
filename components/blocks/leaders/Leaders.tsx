@@ -73,10 +73,12 @@ const data: DataModel[] = [
                 href: 'https://innovators.club/',
             },
         ],
-        name: 'Eduard <br/> Zolotukhin',
+        name: 'Eduards <br/> Zolotukhins',
         description: `
-            <p>is a serial IT entrepreneur and investor, CEO of 3ED Ventures, founder of Innovators.Club, angel investor of DISCOVERCARS.COM.Eduard’s personal mission is to empower and inspire the next wave of entrepreneurs and innovators, encouraging them to dream big and make a tangible impact on the world.</p>
-            <p>Euard will speak about his experience of business development through the realization of spiritual potential, and the vision of Innovators.Club.</p>
+            <p>Eduards Zolotukhins is a serial IT entrepreneur and investor, founder of Innovators.Club, Angel of the 2023 year (Latvia), board member of Latvian Business Angels Association LATBAN, early stage investor in <a href="https://www.discovercars.com/" target="_blank">DiscoverCars.com</a>, <a href="https://flirtu.io/" target="_blank">Flirtu.io</a>, Fluently (backed by YC), <a href="https://perfect.live/" target="_blank">Perfect.live</a>, <a href="https://hackerpulse.io/" target="_blank">Hackerpulse.io</a> (Backed by Antler) and other innovative startups. <br/>
+            Eduard’s personal mission is to empower and inspire the next wave of entrepreneurs and innovators, encouraging them to dream big and make a tangible impact on the world.
+            </p>
+            <p>Eduards will speak about his experience of business development through the realization of spiritual potential, and the vision of Innovators.Club.</p>
         `,
     },
     {
