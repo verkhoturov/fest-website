@@ -91,7 +91,7 @@ const data: DataModel[] = [
         ],
         name: 'Alena <br/> Uhlianica',
         description: `
-            <p>is an expert in strategic foresight, futurist, 18 years in IT, 10 years of entrepreneurship, startups. Founder of the strategic planning agency FUTURES.LANS</p>
+            <p>is an expert in strategic foresight, futurist, 18 years in IT, 10 years of entrepreneurship, startups. Founder of the strategic planning agency <a href="http://futures.land/" target="_blank">FUTURES.LAND</a></p>
             <p>At the festival Alena will give a lecture on the theory and principles of Futures Thinking, an overview of the collection of trends involved in shaping the conditions of the future and a practical master class on applying this theory using the technique Anticipating the Future: Customised Scenario Planning and Backcasting.</p>
         `,
     },
@@ -111,13 +111,11 @@ const data: DataModel[] = [
                 href: 'https://www.instagram.com/babajicenter',
             },
         ],
-        name: 'Artur <br/> Shakh-Nazarov',
+        name: 'Arthur <br/> Shakh-Nazarov',
         description: `
-            <p>Founder of Lucky Charm Collective.</p>
-            <p>Yogi, entrepreneur and guide of Babaji Centre in Riga.</p>
-            <p>More than 15 years in yoga and for the last 10 years has been doing individual and group work. Also conducts soundhiling with gongs, tea meditations, nailing and many others.</p>   
-            <p>At the festival Lea will conduct a workshop Corporate Culture Constructor for Conscious</p>
-            <p>Entrepreneurship as well as creative practices and workshops.</p>
+            <p>Yogi and entrepreneur, founder of <a href="https://www.instagram.com/luckycharmcollective/" target="_blank">Lucky Charm Collective</a> and <a href="https://www.rocketcandy.co/" target="_blank">Rocker Candy</a>, guide of <a href="https://www.instagram.com/babajicenter/" target="_blank">Babaji Centre</a> in Riga.</p>
+            <p>More than 20 years in design, more than 15 years in yoga and for the last 10 years has been doing individual and group work. Also conducts soundhiling with gongs, tea meditations, nailing and many others.</p>
+            <p>Arthur will conduct body practices, sound healing and together with Vitaly will give a presentation on educational technologies and the entrepreneurial environment of the future.</p>
         `,
     },
     {
@@ -134,11 +132,9 @@ const data: DataModel[] = [
         ],
         name: 'Vitaly <br/> Yumaev',
         description: `
-            <p>Founder of Lucky Charm Collective.</p>
-            <p>Entrepreneur and facilitator of body and breath practices.</p>
-            <p>As part of Lucky Charm Collective, he organises events and conducts various practices that calm the mind, strengthen the spirit and develop willpower. For 17 years she has successfully developed a business in automotive programming while exploring new directions in self-discovery and self-improvement. He pays special attention to discipline, goal setting, and morality.</p>
-            <p>At the festival Lea will conduct a workshop Corporate Culture Constructor for Conscious</p>
-            <p>Entrepreneurship as well as creative practices and workshops.</p>
+            <p>Entrepreneur, founder of <a href="https://www.jvkpro.com/">JVKPRO</a>, founder of <a href="https://www.instagram.com/luckycharmcollective/" target="_blank">Lucky Charm Collective</a>, facilitator of body and breath practices.</p>
+            <p>As part of Lucky Charm Collective, he organizes events and conducts various practices that calm the mind, strengthen the spirit and develop willpower. For 17 years she has successfully developed a business in automotive programming while exploring new directions in self-discovery and self-improvement. He pays special attention to discipline, goal setting, and morality.</p>
+            <p>At the festival Vitaly will conduct breath practices, ICE Bath and together with Arthur will give a presentation on educational technologies and the entrepreneurial environment of the future.</p>
         `,
     },
     {
@@ -154,8 +150,8 @@ const data: DataModel[] = [
             <p>DJ and sound producer known for her cinematic DJ sets where music blends perfectly with
             nature. </p>
             <p>Besides live performances and DJ sets, Volkova is an experienced guide of ecstatic
-            dance and has been organising various events and retreats on this topic for over 10 years.
-            Anastasia will conduct ecstatic dance at the festival.</p>
+            dance and has been organising various events and retreats on this topic for over 10 years.</p>
+            <p>Anastasia will conduct ecstatic dance at the festival.</p>
         `,
     },
 ];
