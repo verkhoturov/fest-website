@@ -56,8 +56,10 @@ const Hero = () => {
                         Creative Festival of
                     </Title>
                     <Title className={styles.title}>
-                        Abundant Future Design<br />
-                        and Mindfulness Practices<br />
+                        Abundant Future Design
+                        <br />
+                        and Mindfulness Practices
+                        <br />
                         in Business
                     </Title>
                     <div className={styles.flex}>
