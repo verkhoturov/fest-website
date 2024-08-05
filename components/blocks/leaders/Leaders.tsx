@@ -30,33 +30,19 @@ const data: DataModel[] = [
         `,
     },
     {
-        image: '/images/lead/pavlenko.png',
-        social: [
-            {
-                icon: 'fb',
-                href: 'https://m.facebook.com/eugene.pavlenko/',
-            },
-            {
-                icon: 'web',
-                href: 'https://www.axiomadev.com/',
-            },
-            {
-                icon: 'web',
-                href: 'https://www.whiteflo.com/',
-            },
-        ],
-        name: 'Eugene <br/> Pavlenko',
-        description: `
-            <p>IT entrepreneur, CEO and founder of AXIOMA, COO at WhiteFlo. <br/> As an IT specialist and entrepreneur, Eugene sees the future of conscious entrepreneurship in the combination of spiritual development of breakthrough Information Technologies.</p>
-            <p>Eugene will speak on the future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship.</p>
-        `,
-    },
-    {
         image: '/images/lead/doktoroff.png',
         social: [
             {
                 icon: 'web',
                 href: 'https://www.theintelligent.vc/',
+            },
+            {
+                icon: 'in',
+                href: 'https://www.linkedin.com/in/doktoroff',
+            },
+            {
+                icon: 'inst',
+                href: 'https://www.instagram.com/dogtoroff',
             },
         ],
         name: 'Andrei <br/> Doktoroff',
@@ -93,6 +79,28 @@ const data: DataModel[] = [
         description: `
             <p>is an expert in strategic foresight, futurist, 18 years in IT, 10 years of entrepreneurship, startups. Founder of the strategic planning agency <a href="http://futures.land/" target="_blank">FUTURES.LAND</a></p>
             <p>At the festival Alena will give a lecture on the theory and principles of Futures Thinking, an overview of the collection of trends involved in shaping the conditions of the future and a practical master class on applying this theory using the technique Anticipating the Future: Customised Scenario Planning and Backcasting.</p>
+        `,
+    },
+    {
+        image: '/images/lead/pavlenko.png',
+        social: [
+            {
+                icon: 'fb',
+                href: 'https://m.facebook.com/eugene.pavlenko/',
+            },
+            {
+                icon: 'web',
+                href: 'https://www.axiomadev.com/',
+            },
+            {
+                icon: 'web',
+                href: 'https://www.whiteflo.com/',
+            },
+        ],
+        name: 'Eugene <br/> Pavlenko',
+        description: `
+            <p>IT entrepreneur, CEO and founder of AXIOMA, COO at WhiteFlo. <br/> As an IT specialist and entrepreneur, Eugene sees the future of conscious entrepreneurship in the combination of spiritual development of breakthrough Information Technologies.</p>
+            <p>Eugene will speak on the future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship.</p>
         `,
     },
     {
