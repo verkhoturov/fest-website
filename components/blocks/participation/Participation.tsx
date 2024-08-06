@@ -26,13 +26,7 @@ const Participation = () => {
                     </Text>
                 </div>
                 <div className={styles.col}>
-                    <PriceCard
-                        price="€460"
-                        date="if paid by the end of July 2024"
-                        href={FORM_LINK}
-                        isPromo
-                    />
-                    <PriceCard price="€490" date="if paid from 1 August" href={FORM_LINK} />
+                    <PriceCard price="€490" href={FORM_LINK} />
                 </div>
             </div>
 

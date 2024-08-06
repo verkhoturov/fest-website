@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'] });
 interface Props {
     href?: string;
     price: string;
-    date: string;
+    date?: string;
     isPromo?: boolean;
 }
 
@@ -53,9 +53,9 @@ export const PriceCard = ({ price, date, href, isPromo }: Props) => {
     return (
         <div className={styles.wrap}>
             {card}
-            <Title as="h5" className={styles.date}>
+            {date && <Title as="h5" className={styles.date}>
                 {date}
-            </Title>
+            </Title>}
         </div>
     );
 };
