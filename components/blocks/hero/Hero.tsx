@@ -53,7 +53,7 @@ const Hero = () => {
             <div className={styles.hero}>
                 <div className={styles.content}>
                     <Title as="h4" className={styles.supTitle}>
-                        Creative Festival of
+                        Festival of
                     </Title>
                     <Title className={styles.title}>
                         Conscious Entrepreneurship
