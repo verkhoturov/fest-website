@@ -53,9 +53,11 @@ export const PriceCard = ({ price, date, href, isPromo }: Props) => {
     return (
         <div className={styles.wrap}>
             {card}
-            {date && <Title as="h5" className={styles.date}>
-                {date}
-            </Title>}
+            {date && (
+                <Title as="h5" className={styles.date}>
+                    {date}
+                </Title>
+            )}
         </div>
     );
 };
