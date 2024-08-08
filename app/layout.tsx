@@ -12,7 +12,7 @@ const raleway = Raleway({
 
 export const metadata: Metadata = {
     title: 'TEAL HORIZON',
-    description: 'Abundant Future, Design and Mindfulness, Practices in Business',
+    description: 'Festival of Conscious Entrepreneurship Visionaries',
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
