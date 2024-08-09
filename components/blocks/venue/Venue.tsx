@@ -75,8 +75,8 @@ const Venue = () => {
                     centeredSlides
                     onSwiper={(swiper) => (swiperRef.current = swiper)}
                 >
-                    {images.map((img) => (
-                        <SwiperSlide className={style.slide}>
+                    {images.map((img, i) => (
+                        <SwiperSlide key={i} className={style.slide}>
                             <Image src={img.src} alt="" width={732} height={551} />
                         </SwiperSlide>
                     ))}
