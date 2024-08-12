@@ -65,11 +65,11 @@
 }
 
 .date {
-    font-size: 24px;
-    line-height: 28px;
+    font-size: 24px !important;
+    line-height: 28px !important;
 
     @media (max-width: 1024px) {
-        font-size: 16px;
-        line-height: 19px;
+        font-size: 16px !important;
+        line-height: 19px !important;
     }
 }
