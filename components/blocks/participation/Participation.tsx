@@ -35,9 +35,8 @@ const Participation = () => {
 
             <div className={styles.flex}>
                 <div className={styles.col}>
-                    <Text className={styles.text}>
-                        The price includes only participation in the programme.
-                    </Text>
+                    <Text className={styles.text}>Participation with no accommodation:</Text>
+                    <p>*The price includes participation in the programme and meals</p>
                 </div>
                 <div className={styles.col}>
                     <PriceCard price="€290" date="3 days" href={FORM_LINK} isPromo />
