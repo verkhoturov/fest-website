@@ -20,13 +20,16 @@ const Participation = () => {
                     <Title as="h2" className={styles.title}>
                         Participation <br /> Cost:
                     </Title>
-                    <Text className={styles.text}>
-                        The price includes accommodation in a double room at Nurmuža Hotel, meals,
-                        participation in the programme.
-                    </Text>
+                    <Text className={styles.text}>Participation with accommodation:</Text>
+                    <p>
+                        *The price includes accommodation in a double room at Nurmuža Hotel, meals,
+                        participation in the programme
+                    </p>
                 </div>
                 <div className={styles.col}>
-                    <PriceCard price="€490" href={FORM_LINK} />
+                    <PriceCard price="€490" date="3 days 2 nights" href={FORM_LINK} isPromo />
+                    <PriceCard price="€390" date="2 days 1 night" href={FORM_LINK} />
+                    <PriceCard price="€290" date="1 day 1 night" href={FORM_LINK} />
                 </div>
             </div>
 
@@ -37,8 +40,10 @@ const Participation = () => {
                     </Text>
                 </div>
                 <div className={styles.col}>
-                    <PriceCard price="€260" date="3-day pass" href={FORM_LINK} />
-                    <PriceCard price="€180" date="1-day pass" href={FORM_LINK} />
+                    <PriceCard price="€290" date="3 days" href={FORM_LINK} isPromo />
+                    <PriceCard price="€290" date="2 days" href={FORM_LINK} />
+                    <PriceCard price="€180" date="main day" href={FORM_LINK} />
+                    <PriceCard price="€100" date="first/last day" href={FORM_LINK} />
                 </div>
             </div>
 

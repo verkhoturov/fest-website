@@ -34,7 +34,7 @@ export const PriceCard = ({ price, date, href, isPromo }: Props) => {
             className={classNames(styles.card, isPromo ? styles.cardPromo : '')}
             target="_blank"
         >
-            <Title as="h3" className={styles.price}>
+            <Title as="h3" className={classNames(styles.price, inter.className)}>
                 {price}
             </Title>
             <Text className={styles.text}>per person</Text>

@@ -189,8 +189,8 @@ const Program = () => {
             <Title as="h2" className={styles.title}>
                 Program:
             </Title>
-
-            <p className={styles.subtitle}>Мероприятие будет проходить на русском языке</p>
+            <p>Мероприятие будет проходить на русском языке</p>
+            <p className={styles.subtitle}>The event will be held in Russian</p>
 
             <div className={styles.content}>
                 {data.map((item: DataModel, i: number) => (
