@@ -12,6 +12,12 @@
     align-items: flex-end;
     position: relative;
 
+    @media (max-width: 1024px) {
+        align-items: center;
+        padding: 15px 34px;
+        min-height: 71px;
+    }
+
     svg {
         position: absolute;
         top: 50%;
@@ -41,19 +47,27 @@
     margin-right: 8px;
     color: var(--c-dark);
     line-height: 100%;
+
+    @media (max-width: 1024px) {
+        font-size: 32px;
+    }
 }
 
 .text {
     margin: 0 !important;
+    font-weight: 400;
     font-size: 20px;
     color: var(--c-light);
+
+    @media (max-width: 1024px) {
+        font-size: 16px;
+    }
 }
 
 .date {
-    font-size: 30px;
-    padding: 18px 20px;
+    font-size: 24px;
+
     @media (max-width: 1024px) {
-        font-size: 18px;
-        padding: 10px 15px;
+        font-size: 16px;
     }
 }

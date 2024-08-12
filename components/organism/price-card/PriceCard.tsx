@@ -9,7 +9,7 @@ import classNames from 'classnames';
 const inter = Inter({ subsets: ['latin'] });
 
 interface Props {
-    href?: string;
+    href: string;
     price: string;
     date?: string;
     isPromo?: boolean;
@@ -28,36 +28,26 @@ const icon = (
 );
 
 export const PriceCard = ({ price, date, href, isPromo }: Props) => {
-    const card = href ? (
-        <Link
-            href={href}
-            className={classNames(styles.card, isPromo ? styles.cardPromo : '')}
-            target="_blank"
-        >
-            <Title as="h3" className={classNames(styles.price, inter.className)}>
-                {price}
-            </Title>
-            <Text className={styles.text}>per person</Text>
-            {icon}
-        </Link>
-    ) : (
-        <div className={classNames(styles.card, isPromo ? styles.cardPromo : '')}>
-            <Title as="h3" className={classNames(styles.price, inter.className)}>
-                {price}
-            </Title>
-            <Text className={styles.text}>per person</Text>
-            {icon}
-        </div>
-    );
-
     return (
         <div className={styles.wrap}>
-            {card}
-            {date && (
-                <Title as="h5" className={styles.date}>
-                    {date}
+            <Link
+                href={href}
+                className={classNames(styles.card, isPromo ? styles.cardPromo : '')}
+                target="_blank"
+            >
+                <Title as="h3" className={classNames(styles.price, inter.className)}>
+                    {price}
                 </Title>
-            )}
+                <div>
+                    {date && (
+                        <Title as="h5" className={styles.date}>
+                            {date}
+                        </Title>
+                    )}
+                    <Text className={styles.text}>per person</Text>
+                </div>
+                {icon}
+            </Link>
         </div>
     );
 };

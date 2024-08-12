@@ -27,7 +27,7 @@ const Participation = () => {
                     </p>
                 </div>
                 <div className={styles.col}>
-                    <PriceCard price="€490" date="3 days 2 nights" href={FORM_LINK} isPromo />
+                    <PriceCard price="€490" date="3 days 2 nights" href={FORM_LINK} />
                     <PriceCard price="€390" date="2 days 1 night" href={FORM_LINK} />
                     <PriceCard price="€290" date="1 day 1 night" href={FORM_LINK} />
                 </div>
@@ -39,7 +39,7 @@ const Participation = () => {
                     <p>*The price includes participation in the programme and meals</p>
                 </div>
                 <div className={styles.col}>
-                    <PriceCard price="€290" date="3 days" href={FORM_LINK} isPromo />
+                    <PriceCard price="€290" date="3 days" href={FORM_LINK} />
                     <PriceCard price="€290" date="2 days" href={FORM_LINK} />
                     <PriceCard price="€180" date="main day" href={FORM_LINK} />
                     <PriceCard price="€100" date="first/last day" href={FORM_LINK} />
