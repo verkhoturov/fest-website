@@ -1,12 +1,12 @@
 'use client';
 
 import {
-    memo, // useState
+    memo,
+    ReactNode, // useState
 } from 'react';
 import styles from './ProgramCard.module.scss';
 import classNames from 'classnames';
 import Image from 'next/image';
-import { useScreenSize } from '@/utils';
 
 /*
 const PlusIcon = () => (
@@ -28,9 +28,10 @@ interface Props {
     isMainDay?: boolean;
     data: {
         title: string;
-        headDate: string;
-        bodyDate: string;
-        list: string;
+        list: {
+            desc: string | ReactNode;
+            time: string;
+        }[];
     };
 }
 
@@ -39,7 +40,6 @@ const ProgramCard = ({
     data,
     isMainDay,
 }: Props) => {
-    const { isTablet } = useScreenSize();
     // const [toggle, setToggle] = useState(isOpen || false);
     const cssClasses = classNames(styles.card, isMainDay ? styles.isMainDay : '', className);
 
@@ -62,25 +62,23 @@ const ProgramCard = ({
                         </div>
                     )}
                 </div>
-                <div
-                    className={styles.text} // style={{ opacity: !toggle ? 0 : 1 }}
-                >
-                    {data.headDate}
-                </div>
-                <div className={styles.text}>{data.bodyDate}</div>
-                {/* <div className={styles.icon} style={{ opacity: toggle ? 0 : 1 }}>
-                    <PlusIcon />
-                </div> */}
             </div>
             <div
                 className={classNames(
                     styles.body, // !toggle && styles.hide
                 )}
             >
-                {!isTablet && <div className={styles.col}></div>}
-
                 <div className={styles.col}>
-                    <div className={styles.list} dangerouslySetInnerHTML={{ __html: data.list }} />
+                    <div className={styles.list}>
+                        <ul>
+                            {data.list.map(({ time, desc }, i) => (
+                                <li key={i}>
+                                    <span className={styles.text}>{time}</span>
+                                    <span style={{ paddingTop: 2 }}>{desc}</span>
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

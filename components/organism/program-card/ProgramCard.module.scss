@@ -77,6 +77,12 @@
     overflow: hidden;
     max-height: 100rem;
 
+    padding-left: 60px;
+
+    @media (max-width: 1023px) {
+        padding-left: 0;
+    }
+
     @media (max-width: 768px) {
         flex-direction: column;
     }
@@ -91,14 +97,6 @@
 
 .col {
     width: 100%;
-
-    &:first-child {
-        max-width: 350px;
-
-        @media (max-width: 768px) {
-            // display: none;
-        }
-    }
 }
 
 .date {
@@ -138,12 +136,30 @@
     @media (max-width: 768px) {
         margin-top: 15px;
     }
+
     font-size: 14px;
+
     ul {
         list-style-type: disc;
         padding-left: 15px;
         line-height: 150%;
         color: #000;
+        list-style: none;
+
+        > li {
+            display: flex;
+            gap: 26px;
+            margin-bottom: 14px;
+
+            > span:first-of-type {
+                width: 60px;
+                text-align: right;
+            }
+        }
+
+        @media (max-width: 768px) {
+            padding-left: 0;
+        }
     }
 }
 

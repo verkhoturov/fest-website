@@ -22,6 +22,10 @@ const data: DataModel[] = [
                 icon: 'fb',
                 href: 'https://www.facebook.com/profile.php?id=61560256948246',
             },
+            {
+                icon: 'inst',
+                href: 'https://www.instagram.com/leawedensky/',
+            },
         ],
         name: 'Lea <br/> Wedensky',
         description: `
@@ -66,6 +70,21 @@ const data: DataModel[] = [
             </p>
             <p>Eduards will speak about his experience of business development through the realization of spiritual potential, and the vision of Innovators.Club.</p>
         `,
+    },
+    {
+        image: '/images/lead/pinkas.png',
+        social: [
+            {
+                icon: 'in',
+                href: 'https://www.linkedin.com/in/petro-pinkas/',
+            },
+        ],
+        name: 'Petro <br/> Pinkas',
+        description: `
+            <p>An experienced entrepreneur, visionary, investor and mentor, he has spent over 30 years transforming dreams into reality based on principles of transparency, equality and partnership. He has led over 50 projects, including a $450M Ukrainian petroleum trader, Ukrainian aviation reforms allowing low-cost carriers, and a sunflower oil plant with a 250,000 tons/month capacity.</p>
+            <p>Now, he focuses on ALPHA Brain, a neurofitness method to enhance creativity and brain efficiency, along with ALPHA Events and ALPHA Coffee. His grand goal is to build ecosystems that foster innovation and collaboration.</p>
+            <p>At the festival Petro will talk about Quantum organizations of the future.</p>
+            `,
     },
     {
         image: '/images/lead/p-2.png',
