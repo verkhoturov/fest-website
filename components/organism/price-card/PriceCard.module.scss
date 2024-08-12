@@ -66,8 +66,10 @@
 
 .date {
     font-size: 24px;
+    line-height: 28px;
 
     @media (max-width: 1024px) {
         font-size: 16px;
+        line-height: 19px;
     }
 }
