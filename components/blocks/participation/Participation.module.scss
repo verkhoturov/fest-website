@@ -18,11 +18,17 @@
     }
 }
 
-.block p {
-    font-size: 14px;
-    margin-bottom: 62px;
-    @media (max-width: 600px) {
-        margin-bottom: 30px;
+.block {
+    p {
+        font-size: 14px;
+        margin-bottom: 62px;
+        @media (max-width: 600px) {
+            margin-bottom: 30px;
+        }
+    }
+
+    .text {
+        font-size: 24px;
     }
 }
 
