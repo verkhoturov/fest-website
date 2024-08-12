@@ -190,6 +190,8 @@ const Program = () => {
                 Program:
             </Title>
 
+            <p className={styles.subtitle}>Мероприятие будет проходить на русском языке</p>
+
             <div className={styles.content}>
                 {data.map((item: DataModel, i: number) => (
                     <ProgramCard data={item} key={item.id} isOpen isMainDay={i === 1} />

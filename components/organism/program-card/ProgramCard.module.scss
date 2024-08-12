@@ -152,8 +152,12 @@
             margin-bottom: 14px;
 
             > span:first-of-type {
-                width: 60px;
+                min-width: 60px;
                 text-align: right;
+
+                @media (max-width: 768px) {
+                    min-width: 42px;
+                }
             }
         }
 

@@ -8,6 +8,14 @@
 }
 
 .title {
+    margin-bottom: 12px;
+
+    @media (max-width: 768px) {
+        margin-bottom: 8px;
+    }
+}
+
+.subtitle {
     margin-bottom: 64px;
 
     @media (max-width: 768px) {
