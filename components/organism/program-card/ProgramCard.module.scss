@@ -5,11 +5,22 @@
     border-radius: 32px;
     margin-bottom: 20px;
 
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
     transition: all .2s linear;
 
     @media (max-width: 768px) {
         padding: 25px 20px;
+        flex-direction: column;
+        gap: 0px;
     }
+}
+
+.name {
+    padding-top: 2px;
+    font-weight: 700;
 }
 
 .isMainDay {
@@ -21,7 +32,6 @@
     // cursor: pointer;
     transition: all .2s linear;
     position: relative;
-    margin-bottom: 40px;
 
     @media (max-width: 1023px) {
         margin-bottom: 16px;
@@ -77,7 +87,8 @@
     overflow: hidden;
     max-height: 100rem;
 
-    padding-left: 60px;
+    width: 100%;
+    max-width: 800px;
 
     @media (max-width: 1023px) {
         padding-left: 0;
@@ -107,14 +118,11 @@
     font-weight: 700;
     white-space: nowrap;
 
-    // transition: all .2s linear;
-
-    display: flex;
-    align-items: center;
-    gap: 18px;
-
     @media (max-width: 768px) {
         font-size: 24px;
+        display: flex;
+        align-items: center;
+        gap: 18px;
     }
 
     @media (max-width: 369px) {
@@ -148,8 +156,8 @@
 
         > li {
             display: flex;
-            gap: 26px;
-            margin-bottom: 14px;
+            gap: 140px;
+            margin-bottom: 16px;
 
             > span:first-of-type {
                 min-width: 60px;
@@ -158,6 +166,10 @@
                 @media (max-width: 768px) {
                     min-width: 42px;
                 }
+            }
+
+            @media (max-width: 1279px) {
+                gap: 40px;
             }
         }
 

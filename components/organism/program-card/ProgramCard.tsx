@@ -29,6 +29,7 @@ interface Props {
     data: {
         title: string;
         list: {
+            name: string | ReactNode;
             desc: string | ReactNode;
             time: string;
         }[];
@@ -71,10 +72,13 @@ const ProgramCard = ({
                 <div className={styles.col}>
                     <div className={styles.list}>
                         <ul>
-                            {data.list.map(({ time, desc }, i) => (
+                            {data.list.map(({ time, name, desc }, i) => (
                                 <li key={i}>
                                     <span className={styles.text}>{time}</span>
-                                    <span style={{ paddingTop: 2 }}>{desc}</span>
+                                    <div>
+                                        <p className={styles.name}>{name}</p>
+                                        <span style={{ paddingTop: 2 }}>{desc}</span>
+                                    </div>
                                 </li>
                             ))}
                         </ul>

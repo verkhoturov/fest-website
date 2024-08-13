@@ -9,6 +9,7 @@ interface DataModel {
     id: number;
     title: string;
     list: {
+        name: string | ReactNode;
         desc: string | ReactNode;
         time: string;
     }[];
@@ -21,14 +22,17 @@ const data: DataModel[] = [
         list: [
             {
                 time: '15:00',
-                desc: 'Check-in',
+                name: 'Check-in',
+                desc: '',
             },
             {
                 time: '16:30',
+                name: 'Eugene Pavlenko, Lea Wedensky',
                 desc: 'Welcome speech & festival rules introduction',
             },
             {
                 time: '17:00',
+                name: 'Lea Wedensky',
                 desc: (
                     <>
                         Introduction of participants and establishment of a creative environment
@@ -39,6 +43,7 @@ const data: DataModel[] = [
             },
             {
                 time: '18:30',
+                name: 'Eduards Zolotuhins',
                 desc: (
                     <>
                         Experience of business development through the realization of spiritual
@@ -49,14 +54,17 @@ const data: DataModel[] = [
             },
             {
                 time: '19:00',
-                desc: 'Dinner',
+                name: 'Dinner',
+                desc: '',
             },
             {
                 time: '20:30',
+                name: 'Irina Yumaeva, Arthur Shakh-Nazarov, Vitaly Yumaev',
                 desc: 'Metaphorical cards',
             },
             {
                 time: '22:30',
+                name: 'Arthur Shakh-nazarov',
                 desc: 'Sound Healing session',
             },
         ],
@@ -67,90 +75,112 @@ const data: DataModel[] = [
         list: [
             {
                 time: '7:30',
+                name: 'Arthur Shakh-Nazarov and Vitaly Yumaev',
                 desc: 'Morning body & mindfulness practices',
             },
             {
                 time: '9:00',
-                desc: 'Breakfast',
+                name: 'Breakfast',
+                desc: '',
             },
             {
                 time: '10:00',
+                name: 'Aliena Uhlianica',
                 desc: 'Foresight for SME and Private / Introduction',
             },
             {
                 time: '10:45',
+                name: '',
                 desc: 'Break',
             },
             {
                 time: '11:00',
+                name: 'Andrey Doktoroff',
                 desc: 'Vision of development a venture ecosystem for mindful intelligent entrepreneurs',
             },
             {
                 time: '11:30',
+                name: '',
                 desc: 'Break',
             },
             {
                 time: '11:45',
+                name: 'Petro Pinkas',
                 desc: 'Quantum organizations of the future',
             },
             {
                 time: '12:15',
+                name: '',
                 desc: 'Break',
             },
             {
                 time: '12:30',
+                name: 'Arthur Shakh-Nazarov and Vitaly Yumaev',
                 desc: 'Educational technologies and the entrepreneurial environment of the future',
             },
             {
                 time: '13:00',
+                name: '',
                 desc: 'Break',
             },
             {
                 time: '13:15',
+                name: 'Eugene Pavlenko',
                 desc: 'Future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship',
             },
             {
                 time: '13:45',
+                name: '',
                 desc: 'Lunch',
             },
             {
                 time: '14:45',
+                name: '',
                 desc: 'Rest break',
             },
             {
                 time: '15:45',
+                name: 'Vitaly Yumaev',
                 desc: 'Breath practice',
             },
             {
                 time: '16:15',
+                name: 'Aliena Uhlianica',
                 desc: 'Foresight for SME and Private / Work in Groups',
             },
             {
                 time: '18:15',
+                name: '',
                 desc: 'Dinner',
             },
             {
                 time: '19:15',
+                name: 'Lea Wedensky',
                 desc: 'Seminar-workshop "Building an Everlasting Corporate Culture"',
             },
             {
                 time: '21:45',
+                name: '',
                 desc: 'Break',
             },
             {
                 time: '22:00',
+                name: 'Arthur Shakh-Nazarov',
                 desc: 'Warmup - Breathing practice to the sound of a tambourine',
             },
             {
                 time: '22:30',
+                name: '',
                 desc: 'Ecstatic Dance',
             },
             {
                 time: '23:30',
+                name: 'Arthur Shakh-Nazarov',
                 desc: 'Sound Healing with Gong and Visualizaition practice',
             },
             {
                 time: '0:00',
+                name: '',
                 desc: 'End of day',
             },
         ],
@@ -161,22 +191,27 @@ const data: DataModel[] = [
         list: [
             {
                 time: '7:30',
+                name: 'Arthur Shakh-Nazarov and Vitaly Yumaev ',
                 desc: 'Morning body & mindfulness practices',
             },
             {
                 time: '9:00',
+                name: '',
                 desc: 'Breakfast',
             },
             {
                 time: '10:00',
+                name: 'Lea Wedensky',
                 desc: 'Feedback, Debriefing, Summarizing',
             },
             {
                 time: '11:30',
+                name: 'Irina Yumaeva, Arthur Shakh-Nazarov, Vitaly Yumaev',
                 desc: 'Transformative game',
             },
             {
                 time: '15:00',
+                name: '',
                 desc: 'End of festival',
             },
         ],
