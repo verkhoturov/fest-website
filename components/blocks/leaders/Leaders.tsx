@@ -100,7 +100,6 @@ const data: DataModel[] = [
             <p>At the festival Alena will give a lecture on the theory and principles of Futures Thinking, an overview of the collection of trends involved in shaping the conditions of the future and a practical master class on applying this theory using the technique Anticipating the Future: Customised Scenario Planning and Backcasting.</p>
         `,
     },
-    /*
     {
         image: '/images/lead/pavlenko.png',
         social: [
@@ -123,7 +122,6 @@ const data: DataModel[] = [
             <p>Eugene will speak on the future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship.</p>
         `,
     },
-    */
     {
         image: '/images/lead/p-3.png',
         social: [
