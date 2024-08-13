@@ -13,6 +13,7 @@ const target = [
     { id: 1, href: 'https://m.facebook.com/events/1433819980660964', icon: 'fb' },
     { id: 2, href: 'https://www.instagram.com/teal.horizon/', icon: 'inst' },
     { id: 3, href: 'https://www.youtube.com/@openprophet', icon: 'youtube' },
+    { id: 4, href: 'https://t.me/tealhorizon', icon: 'tg' },
 ];
 
 export const Header = () => {
