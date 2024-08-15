@@ -18,7 +18,7 @@ const Navigation = ({ className }: Props) => {
         <nav className={navClass}>
             <ul>
                 <li>
-                    <ScrollLink href="/#prog" to="prog" offset={-50} duration={500} smooth spy>
+                    <ScrollLink href="/#program" to="program" offset={-50} duration={500} smooth spy>
                         Program
                     </ScrollLink>
                 </li>

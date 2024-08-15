@@ -230,7 +230,7 @@ const data: DataModel[] = [
 
 const Program = () => {
     return (
-        <div className={styles.block} id="prog">
+        <div className={styles.block} id="program">
             <Title as="h2" className={styles.title}>
                 Program:
             </Title>
