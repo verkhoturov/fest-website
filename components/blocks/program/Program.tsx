@@ -64,7 +64,7 @@ const data: DataModel[] = [
             },
             {
                 time: '22:30',
-                name: 'Arthur Shakh-nazarov',
+                name: 'Arthur Shakh-Nazarov',
                 desc: 'Sound Healing session',
             },
         ],
@@ -80,8 +80,8 @@ const data: DataModel[] = [
             },
             {
                 time: '9:00',
-                name: 'Breakfast',
-                desc: '',
+                name: '',
+                desc: 'Breakfast',
             },
             {
                 time: '10:00',
@@ -94,39 +94,49 @@ const data: DataModel[] = [
                 desc: 'Break',
             },
             {
-                time: '11:00',
+                time: '10:55',
                 name: 'Andrey Doktoroff',
                 desc: 'Vision of development a venture ecosystem for mindful intelligent entrepreneurs',
             },
             {
-                time: '11:30',
+                time: '11:25',
                 name: '',
                 desc: 'Break',
             },
             {
-                time: '11:45',
+                time: '11:35',
                 name: 'Petro Pinkas',
                 desc: 'Quantum organizations of the future',
             },
             {
-                time: '12:15',
+                time: '12:05',
                 name: '',
                 desc: 'Break',
             },
             {
-                time: '12:30',
+                time: '12:15',
+                name: 'Eugene Pavlenko',
+                desc: 'Future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship',
+            },
+            {
+                time: '12:45',
+                name: '',
+                desc: 'Break',
+            },
+            {
+                time: '12:55',
                 name: 'Arthur Shakh-Nazarov and Vitaly Yumaev',
                 desc: 'Educational technologies and the entrepreneurial environment of the future',
             },
             {
-                time: '13:00',
+                time: '13:25',
                 name: '',
                 desc: 'Break',
             },
             {
-                time: '13:15',
-                name: 'Eugene Pavlenko',
-                desc: 'Future of the Internet (Web4) and AI, and their role in building an ecosystem of conscious entrepreneurship',
+                time: '13:35',
+                name: 'Anastasia Volkova',
+                desc: 'Social events for consicous community building',
             },
             {
                 time: '13:45',
@@ -170,7 +180,7 @@ const data: DataModel[] = [
             },
             {
                 time: '22:30',
-                name: '',
+                name: 'Anastasia Volkova',
                 desc: 'Ecstatic Dance',
             },
             {

@@ -171,6 +171,10 @@ const data: DataModel[] = [
                 icon: 'youtube',
                 href: 'https://www.youtube.com/@VOLKOVADJ',
             },
+            {
+                icon: 'inst',
+                href: "https://www.instagram.com/n.volkova.music/",
+            }
         ],
         name: 'Anastasia <br/> Volkova',
         description: `
